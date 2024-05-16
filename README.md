@@ -4,29 +4,36 @@ test-angular
 =======
 # AngularMagic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+This project showcases a web application built with Angular, utilizing Tailwind CSS for styling and Angular Material for UI components.
 
-## Development server
+## Development Environment Setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To run the project locally, follow these steps:
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Node.js (version 14.x or higher)
+- Docker (optional, required only if using Docker for local development)
 
-## Build
+### Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/angular-magic.git
+   cd angular-magic
+   ```
 
-## Running unit tests
+### Running
+    ```
+    docker compose build && docker compose up
+    ```
+    
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Adress
+    ```
+    http://localhost:4200/
+    
+    ```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
->>>>>>> b69693a (fix: fixed the environment)
+### Current Status
+The project is operational with the exception of the card fetching functionality. The current implementation encountered issues with making repeated requests to the server and unsubscribing when the cards list reaches its capacity.
