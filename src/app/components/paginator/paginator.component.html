@@ -1,0 +1,6 @@
+<mat-paginator [length]="currentList.length" [pageSize]="pageSize" (page)="onPageChange($event)" [pageIndex]="currentPage" arial-label="Select page">
+</mat-paginator>
+
+<div *ngFor="let actualIntem of pageContent">
+    {{ actualIntem }}
+</div>

@@ -1,0 +1,13 @@
+<mat-card  class="bg-white shadow-md min-w-[300px] max-w-2/5">
+    <mat-card-header>
+        <mat-card-subtitle>{{ collection.name }}</mat-card-subtitle>
+        <mat-card-title>{{ collection.block }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{ collection.releaseDate | date: 'dd/MM/yyyy' }}</p>
+        <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-stroked-button (click)="collectionChoose()">choose</button>
+    </mat-card-actions>
+</mat-card>      

@@ -1,0 +1,10 @@
+<form class="max-w-[215px]">
+    <mat-form-field [style.border]="borderStyle">
+      <mat-label>Select the block</mat-label>
+      <mat-select (selectionChange)="getBlock()" [(ngModel)]="selectedBlock" name="block">
+        @for (block of collectionBlock; track block) {
+          <mat-option [value]="block.name">{{block.name}}</mat-option>
+        }
+      </mat-select>
+    </mat-form-field>
+</form>

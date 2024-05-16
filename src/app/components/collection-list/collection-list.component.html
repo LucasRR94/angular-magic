@@ -1,0 +1,6 @@
+<section class="flex flex-row justify-center sm:justify-start items-start flex-wrap gap-2 mt-4">
+    <app-collection  (collectionChooseEvent)="codeHaveBeenChoose($event)"  *ngFor="let collection of listCollection" [collection]="collection"></app-collection>
+</section>
+
+
+

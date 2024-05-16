@@ -1,0 +1,13 @@
+<form class="flex flex-col sm:items-start items-center sm:flex-row content-center gap-2">
+    <mat-form-field class="max-w-[215px]">
+        <mat-label>Name collection</mat-label>
+        <input type="name" matInput [formControl]="collectionName"
+               placeholder="khan">
+    </mat-form-field>
+    <app-drop-down-menu-collection (blockEvent)="updateCollectionBlock($event)" [warningActive]="warningActive"></app-drop-down-menu-collection>
+    <button mat-flat-button 
+    class="bg-[#f5f5f5] border-[#989898] border-b-[1px] w-[215px] sm:w-[80px] h-[56px] font-light active:opacity-50" 
+    (click)="onFormSubmit()"> search </button>
+</form>
+
+

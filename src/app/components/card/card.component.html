@@ -1,0 +1,19 @@
+<mat-card class="bg-white shadow-md min-w-[300px] max-w-2/5 max-w-[300px] m-h-[200px]">
+    <mat-card-header>
+    <mat-card-title>{{card.name}}</mat-card-title>
+    </mat-card-header>
+        <img class="p-4"mat-card-image [src]="card.imageUrl" alt="{{card.name + 'card magic'}}" />
+    <mat-card-content>
+    <article class="flex flex-col gap-2">
+        <div class="flex flex-row">
+            <span class="font-extralight">Text:</span><span class="text-[#000] underline">{{card.text}}</span>
+        </div>
+        <div class="flex flex-row">
+            <span class="font-extralight">Mana cost:</span><span class="text-[#000] underline">{{card.manaCost}}</span>
+        </div>
+        <div class="flex flex-row">
+            <span class="font-extralight">Color identity:</span> <span class="text-[#000] underline">{{card.colorIdentity}}</span>
+        </div>
+    </article>
+    </mat-card-content>
+</mat-card>
