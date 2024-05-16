@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  @media (min-width: 640px) {
+    :root {
+      --tw-bg-opacity: 1;
+      --tw-text-opacity: 1;
+      --tw-border-opacity: 1;
+      --tw-placeholder-opacity: 1;
+      --tw-ring-opacity: 1;
+    }
+    html {
+      background-color: #1a202c;
+      color: #e2e8f0;
+    }
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
