@@ -7,4 +7,4 @@ export const LIST_BLOCKS: Array<CollectionInterface> = [
     { releaseDate: new Date(), name: "Ravnica", block: 'Ravnica ', code: '' },
     { releaseDate: new Date(), name: "Onslaught", block: 'Onslaught', code: '' }];
 
-
+export const MAX_REQUEST_LIST = 30;

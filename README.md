@@ -36,4 +36,4 @@ To run the project locally, follow these steps:
     ```
 
 ### Current Status
-The project is operational with the exception of the card fetching functionality. The current implementation encountered issues with making repeated requests to the server and unsubscribing when the cards list reaches its capacity.
+Is working, making both request for collections and boosts
