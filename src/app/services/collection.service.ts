@@ -13,7 +13,6 @@ export class CollectionService {
   constructor(private http: HttpClient) { }
 
   public getCollections(argumentUrl: string): Observable<[any]> {
-    console.log('adress', `${this.apiCollectionUrl}${argumentUrl}`);
     return this.http.get<any[]>(`${this.apiCollectionUrl}${argumentUrl}`).pipe(
       map((response: any) => {
         return response;

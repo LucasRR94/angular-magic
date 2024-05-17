@@ -21,7 +21,7 @@ export class CardListComponent implements OnChanges {
   constructor(private cardService: CardService) { }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
+    //console.log(changes);
   }
   /*
   ngOnInit(): void {

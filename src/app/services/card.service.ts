@@ -13,8 +13,7 @@ export class CardService {
   constructor(private http: HttpClient) { }
 
   public getCards(parameter: any): Observable<[any]> {
-    //return this.http.get<any[]>(`${this.apiUrl}/${parameter}/booster`).pipe(
-    return this.http.get<any[]>(`${this.apiUrl}/ktk/booster`).pipe(
+    return this.http.get<any[]>(`${this.apiUrl}/${parameter}/booster`).pipe(
       map((response: any) => {
         return response;
       })

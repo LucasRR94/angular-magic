@@ -41,7 +41,6 @@ export class FormSearchCollectionComponent {
       this.warningActive = true;
       setTimeout(() => { this.warningActive = false }, 3000);
     }
-    console.log('called')
     //calls api
     this.collectionsResponse$ = this.collectionService.getCollections(`${this.collectionName.value}|${this.collectionBlock}`);
     this.collectionsResponse$.subscribe((data) => {

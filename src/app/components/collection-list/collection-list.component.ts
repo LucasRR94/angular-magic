@@ -17,7 +17,7 @@ export class CollectionListComponent implements OnChanges {
   constructor(private collectionService: CollectionService) { }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes);
+    //console.log(changes);
   }
 
   codeHaveBeenChoose($event: any) {
